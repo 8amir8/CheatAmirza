@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">چیتامیرزا</string>
+    <string name="LetsStart">بزن بریم</string>
+    <string name="title_activity_search">جستجو</string>
+
+    <string name="search_it">بریم پیداش کنیم</string>
+    <string name="search_action">search</string>
+    <string name="search_hint">حروفت رو وارد کن</string>
+</resources>
