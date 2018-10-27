@@ -1,5 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
@@ -31,19 +33,23 @@
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:hint="@string/search_hint">
 
-                <EditText
+                <br.com.sapereaude.maskedEditText.MaskedEditText
                     android:id="@+id/search_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/search_hint"
                     android:imeActionId="@+id/login"
                     android:imeActionLabel="@string/search_action"
                     android:imeOptions="actionUnspecified"
                     android:inputType="text"
                     android:maxLines="1"
-                    android:maxLength="11" />
+                    mask:mask="c،c،c،c،c،c"
+                    mask:char_representation="c"
+                    android:typeface="monospace"
+                    app:keep_hint="false"
+                    />
 
             </android.support.design.widget.TextInputLayout>
 
